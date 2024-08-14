@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <title>Document</title>
+</head>
+<body class="bg-red-300 h-screen flex items-center flex-col justify-center">
+    <div id="clock" class="h-24 w-48 bg-blue-600 border rounded-xl flex items-center text-2xl font-bold justify-center font-sans">
+
+    </div>
+    <script>
+        const clock=document.getElementById('clock')
+       setInterval(() => {
+            let date=new Date();
+            clock.innerHTML= date.toLocaleTimeString();
+            
+        },1000);
+    </script>
+
+    
+</body>
+</html>
